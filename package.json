@@ -1,5 +1,5 @@
 {
-  "name": "od-api-npm",
+  "name": "oracle-d-api",
   "version": "1.0.0",
   "description": "Easy access to the Oracle-D API",
   "main": "index.js",
