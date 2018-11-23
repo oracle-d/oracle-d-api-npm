@@ -1,0 +1,26 @@
+{
+  "name": "od-api-npm",
+  "version": "1.0.0",
+  "description": "Easy access to the Oracle-D API",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wehmoen/oracle-d-api-npm.git"
+  },
+  "keywords": [
+    "oracled",
+    "steem"
+  ],
+  "author": "wehmoen",
+  "license": "CC-BY-ND-4.0",
+  "bugs": {
+    "url": "https://github.com/oracle-d/oracle-d-api-npm/issues"
+  },
+  "homepage": "https://github.com/wehmoen/oracle-d-api-npm#readme",
+  "dependencies": {
+    "node-fetch": "^2.3.0"
+  }
+}
