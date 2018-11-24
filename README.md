@@ -2,6 +2,10 @@
 
 If you want to use the Oracle-D API please apply for an API key at: [https://api.oracle-d.com/v1](https://api.oracle-d.com/v1)
 
+## Licence
+
+This package is licenced under [CC BY-ND 4.0](https://creativecommons.org/licenses/by-nd/4.0/)
+
 ## Installation
 
 `npm i oracle-d-api --save`
