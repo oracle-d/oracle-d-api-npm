@@ -30,7 +30,7 @@ OracleD = {
                                 } else if (json.code >= 400) {
                                     reject(json.errors[0])
                                 } else {
-                                    reject("An unknown error occurred. Please contact support@oracle-d.com")
+                                    reject(json.message !== undefined ? json.message : "An unknown error occured. Please contact support@oracle-d.com")
                                 }
                             }).catch(e => {
                             reject(e);
@@ -61,7 +61,7 @@ OracleD = {
                             } else if (json.code >= 400) {
                                 reject(json.errors[0])
                             } else {
-                                reject("An unknown error occurred. Please contact support@oracle-d.com")
+                                reject(json.message !== undefined ? json.message : "An unknown error occured. Please contact support@oracle-d.com")
                             }
                         }).catch(e => {
                         reject(e);
@@ -92,7 +92,7 @@ OracleD = {
                                 } else if (json.code >= 400) {
                                     reject(json.errors[0])
                                 } else {
-                                    reject("An unknown error occured. Please contact support@oracle-d.com")
+                                    reject(json.message !== undefined ? json.message : "An unknown error occured. Please contact support@oracle-d.com")
                                 }
                             }).catch(e => {
                             reject(e);
