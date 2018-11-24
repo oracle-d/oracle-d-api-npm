@@ -1,6 +1,6 @@
 {
   "name": "oracle-d-api",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Easy access to the Oracle-D API",
   "main": "index.js",
   "scripts": {
