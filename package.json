@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/wehmoen/oracle-d-api-npm.git"
+    "url": "git+https://github.com/oracle-d/oracle-d-api-npm.git"
   },
   "keywords": [
     "oracled",
@@ -19,7 +19,7 @@
   "bugs": {
     "url": "https://github.com/oracle-d/oracle-d-api-npm/issues"
   },
-  "homepage": "https://github.com/wehmoen/oracle-d-api-npm#readme",
+  "homepage": "https://github.com/oracle-d/oracle-d-api-npm#readme",
   "dependencies": {
     "node-fetch": "^2.3.0"
   }
