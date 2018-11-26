@@ -5,7 +5,10 @@ OracleD = {
         API: class {
             constructor(config) {
                 this.baseURL = 'https://api.oracle-d.com/v1';
-                this.api_key = config.api_key
+                this.api_key = config.api_key;
+                this.STATUS_PENDING = "pending";
+                this.STATUS_CREATED = "created";
+                this.STATUS_FAILED = "failed"
             }
 
             async getAccountStatus(account) {
