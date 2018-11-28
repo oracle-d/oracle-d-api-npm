@@ -41,4 +41,12 @@ api.getAccountStatus(account.data).then(account => {
 api.getAccountList().then(data => {
     console.log(data)
 });
+
+// get information about my api key
+api.getDappStatus().then(data => {
+    console.log(data)
+});
 ```
+
+
+

@@ -11,6 +11,25 @@ OracleD = {
                 this.STATUS_FAILED = "failed"
             }
 
+            async getDappStatus() {
+                return new Promise((resolve, reject) => {
+                    fetch(this.baseURL + '/dapp/status', {
+                        method: 'get',
+                        headers: {
+                            'Content-Type': 'application/json',
+                            'x-api-key': this.api_key,
+                        },
+                    })
+                        .then(res => res.json())
+                        .then(json => {
+                            resolve(json);
+                        }).catch(e => {
+                            reject(e)
+
+                    })
+                })
+            }
+
             async getAccountStatus(account) {
                 return new Promise((resolve, reject) => {
                     if (account.constructor.name !== "Account") {
@@ -18,7 +37,7 @@ OracleD = {
                     } else if (!account.hasOwnProperty("_id")) {
                         throw new Error("account needs to be requested first")
                     } else {
-                        fetch(this.baseURL + '/accounts/'+account._id, {
+                        fetch(this.baseURL + '/accounts/' + account._id, {
                             method: 'get',
                             headers: {
                                 'Content-Type': 'application/json',
